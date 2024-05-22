@@ -1,0 +1,18 @@
+services:
+    zockerparadise.serial.acp_controller:
+        class: zockerparadise\serial\acp\controller\manage_serials_controller
+        arguments:
+            - '@dbal.conn'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: controller.service }
+    
+    zockerparadise.serial.ucp_controller:
+        class: zockerparadise\serial\ucp\controller\fmgs_serial_controller
+        arguments:
+            - '@dbal.conn'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: controller.service }

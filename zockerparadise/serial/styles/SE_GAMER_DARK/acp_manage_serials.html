@@ -1,0 +1,28 @@
+<!-- Template for ACP Manage Serials -->
+<div class="panel">
+    <div class="inner">
+        <h3>{L_ACP_MANAGE_SERIALS}</h3>
+        <!-- Display assigned serials here -->
+        <table class="table1">
+            <thead>
+                <tr>
+                    <th>{L_USERNAME}</th>
+                    <th>{L_SERIAL_KEY}</th>
+                    <th>{L_ACTIONS}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through assigned serials -->
+                <tr>
+                    <td>{USERNAME}</td>
+                    <td>{SERIAL_KEY}</td>
+                    <td>
+                        <a href="{U_RENEW_SERIAL}">{L_ACP_RENEW_SERIAL}</a>
+                        <a href="{U_DELETE_SERIAL}">{L_ACP_DELETE_SERIAL}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="{U_ADD_SERIAL}">{L_ACP_ADD_SERIAL}</a>
+    </div>
+</div>

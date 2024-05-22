@@ -1,0 +1,23 @@
+{
+    "name": "zockerparadise/serial",
+    "type": "phpbb-extension",
+    "description": "Adds FMGS Serial functionality to phpBB.",
+    "require": {
+        "php": ">=7.2.5",
+        "phpbb/phpbb": "^3.3.0"
+    },
+    "extra": {
+        "phpbb": {
+            "extension_version": "1.0.0",
+            "author": "zockerparadise",
+            "homepage": "",
+            "license": "GNU General Public License v2",
+            "languages": [
+                "en"
+            ],
+            "config": {
+                "version": "1.0.0"
+            }
+        }
+    }
+}
